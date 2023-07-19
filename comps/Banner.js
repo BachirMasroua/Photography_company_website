@@ -1,9 +1,8 @@
-const Banner = () => {
+const Banner = ({image, text, text_color, span}) => {
     return ( 
         <banner>
-            <banner-overlay>
-                <h2>Transforming Moments into <span className="Memories">Memories</span></h2>
-            </banner-overlay>
+                <img src={image} />
+                <h2 style={{color: text_color}} >{text} {span? <span className="Memories">{span}</span> :<></>}</h2>
         </banner>
      );
 }

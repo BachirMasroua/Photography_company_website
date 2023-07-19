@@ -5,7 +5,7 @@ import Contact from '@/comps/Contact'
 export default function Home() {
   return (
     <div>
-      <Banner />
+      <Banner image="/images/banner.jpg" text="Transforming Moments into" span="Memories" />
       <About />
       <Contact />
     </div>
