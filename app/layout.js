@@ -12,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-200">
+      <body className="bg-gray-200" style={{
+        '@media (min-width: 768px)': {
+          fontSize: "10%"
+        },
+      }}>
         <Header/>
         {children}
         <Footer/>
