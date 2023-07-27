@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return ( 
-      <footer className="bg-gradient-to-b from-gray-200 to-slate-400 text-center py-8 lg:text-base text-s">
+      <footer className="text-gray-700 bg-gradient-to-b from-gray-200 to-slate-400 text-center py-8 lg:text-base text-s">
       <div className="flex justify-center">
         <div className="flex items-center space-x-4">
           <Link href="https://www.facebook.com/" target="_blank" className="flex items-center hover:text-blue-600">
@@ -31,7 +31,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <p className="text-gray-600 my-2">&copy; 2023 Company Name. All rights reserved.</p>
+      <p className="pt-5">&copy; 2023 <Link className="inline-flex align-middle" href="/"><img className="lg:w-20 w-10" src="/images/logo.png" alt="Logo"></img></Link> Light Studio  All rights reserved.</p>
     </footer>
      );
 }

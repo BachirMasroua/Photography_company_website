@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Contact = () => {
     return ( 
       <div className="flex items-center justify-center">

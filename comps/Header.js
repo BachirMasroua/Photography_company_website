@@ -10,7 +10,7 @@ const Header = () => {
         <header className="
         flex justify-between items-center border-b-2 border-gray-400 
         py-4 px-8 fixed top-0 left-0 right-0 z-10 bg-white">
-          <img className="lg:w-40 sm:w-20 w-20" src="/images/logo.png" alt="Logo" />
+          <Link href="/"><img className="lg:w-40 w-20" src="/images/logo.png" alt="Logo" /></Link>
           <nav>
             <ul className="flex lg:text-lg text-xs">
               <li className="mr-4">
