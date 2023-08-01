@@ -1,8 +1,16 @@
-const GridComponent = ({ image, text, _class }) => {
+const GridComponent = ({ image, text, _class , _handleCheckboxChange}) => {
   return (
     <div className="bg-white rounded-lg shadow-md">
-      <img src={image} alt={`Image`} className={`${_class} w-full h-80 object-cover rounded-t-lg`} />
-      <p className="text-lg font-semibold p-4">{text}</p>
+      <label className="cursor-pointer">
+        <img src={image} alt={`Image`} className={`${_class} w-full h-80 object-cover rounded-t-lg`} />
+        <input
+          type="checkbox"
+          value={text}
+          onChange={_handleCheckboxChange}
+          className="m-4 h-5 w-5 rounded borde"
+        />
+        <p className="text-lg font-semibold p-4 inline-block checked:bg-blue-500" >{text}</p>
+      </label>
     </div>
   );
 };
