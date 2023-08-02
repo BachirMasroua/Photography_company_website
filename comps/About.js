@@ -15,8 +15,8 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const About = () => {
     return ( 
-      <section className="flex flex-col items-center md:flex-row md:justify-around px-4 py-8 ">
-      <div className="text-center md:w-1/2 md:p-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 place-items-center">
+      <div className="text-center md:p-4">
         <h2 className="lg:text-4xl text-2xl mb-4">About Us</h2>
         <p className="mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolor aperiam eligendi,
@@ -32,48 +32,48 @@ const About = () => {
           minima modi id nobis? Omnis est facilis soluta recusandae impedit mollitia!
         </p>
       </div>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="max-w-md max-h-96"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-      </Swiper>
-
+      <div className="mySwiperHome md:p-12">
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+        >
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </SwiperSlide >
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </section>
      );
 }
