@@ -4,7 +4,21 @@ import About from '@/comps/About';
 import Banner from '@/comps/Banner';
 import Contact from '@/comps/Contact';
 import GridComponent from '@/comps/GridComponent';
+
+
 import { useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+
 
 export default function Home() {
   const services = [
@@ -46,9 +60,7 @@ export default function Home() {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-8">
           {services.map((service, index) => (
-            <>
-            <GridComponent key={index} image={service.image} text={service.text} _class={'border-b-green-600 border-4'} _handleCheckboxChange={handleCheckboxChange} />
-            </>
+                <GridComponent key={index} image={service.image} text={service.text} _class={'border-b-green-600 border-4'} _handleCheckboxChange={handleCheckboxChange} />
           ))}
         </div>
       </div>
@@ -61,6 +73,7 @@ export default function Home() {
         </ul>
       </div>
       <Contact />
+
     </div>
   );
 }
