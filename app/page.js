@@ -4,6 +4,7 @@ import About from '@/comps/About';
 import Banner from '@/comps/Banner';
 import Contact from '@/comps/Contact';
 import GridComponent from '@/comps/GridComponent';
+import Accordion from '@/comps/Accordion';
 
 
 import { useState } from 'react';
@@ -73,6 +74,18 @@ export default function Home() {
         </ul>
       </div>
       <Contact />
+
+      <div className="container mx-auto p-4 md:px-28">
+      <h1 className="text-3xl font-semibold text-black mb-4">Frequently Asked Questions</h1>
+      <Accordion
+        title="How do I book a photoshoot?"
+        content="To book a photoshoot, simply visit our booking page and select your preferred package. Fill out the form with your details, and we will contact you to confirm the booking."
+      />
+      <Accordion
+        title="What should I wear for the photoshoot?"
+        content="We recommend wearing clothing that reflects your personal style and the theme of the photoshoot. Solid colors or simple patterns tend to work best. Avoid overly flashy or distracting outfits."
+      />
+      </div>
 
     </div>
   );
