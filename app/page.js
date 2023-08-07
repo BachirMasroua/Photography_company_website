@@ -59,7 +59,7 @@ export default function Home() {
         <h1 className="lg:text-4xl text-2xl mb-4 text-center">
           Our Services for
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-8 2xl:container mx-auto">
           {services.map((service, index) => (
                 <GridComponent key={index} image={service.image} text={service.text} _class={'border-b-green-600 border-4'} _handleCheckboxChange={handleCheckboxChange} />
           ))}

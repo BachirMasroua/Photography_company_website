@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const About = () => {
     return ( 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 place-items-center">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 place-items-center 2xl:container mx-auto">
       <div className="text-center md:p-4">
         <h2 className="lg:text-4xl text-2xl mb-4">About Us</h2>
         <p className="mb-6">
